@@ -454,17 +454,5 @@ p, ul li {
         display: block;
         page-break-before: always;
     }
-
-    #diplome {
-        margin-top: 132px;
-    }
-
-    #about {
-        margin-top: 329px;
-    }
-
-    /*a[href^="http"]:not([href*="https://mlikmahdi.github.io/"]):after {
-        content: " (" attr(href) ")";
-    }*/
 }
 /* End print */
