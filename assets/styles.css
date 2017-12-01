@@ -4,7 +4,7 @@
     padding: 0;
     border: 0;
     font-family: 'Spectral SC', serif;
-    font-weight: normal;
+    font-weight:400;
     font-style: normal;
     text-decoration: none;
 }
@@ -14,7 +14,6 @@
     max-width: 80%;
     margin: 20px auto;
     font-family: 'Spectral SC', serif;
-    /*background-color: darkgray;*/
 }
 
 h1, h3, h5 {
@@ -26,6 +25,10 @@ h1, h3, h5 {
 h2, h4 {
     color: #2C75E7;
     font-weight: 400;
+}
+
+p, ul li {
+    font-size: 14px;
 }
 
 .title{
@@ -83,8 +86,9 @@ h2, h4 {
     margin-left: 20px;
 }
 
-#colGauche {
+#colGauche, #colDroite {
     width: 50%;
+    margin-top: 20px;
 }
 
 #colGauche img {
@@ -93,20 +97,373 @@ h2, h4 {
     display: inline-block;
 }
 
-#colDroite {
-    width: 50%;
-}
-
 #colDroite img {
     width: 50px;
     height: 50px;
 }
-
-#contactLeft {
-    width: 50%;
-}
-
-#contactRight {
-    width: 50%;
-}
 /* End section */
+
+/* Experience */
+#experience h4 {
+    margin: 0;
+}
+
+#experience h6 {
+    margin: 10px 10px 0px 20px;
+}
+
+#experience ul {
+    margin: 0px 0px 20px 20px;
+}
+
+#experience ul:last-child {
+    margin: 10px 0px 20px 20px;
+}
+/* End Experience */
+
+/* Compétence */
+#competence td {
+    padding: 20px;
+}
+
+#legend td {
+    padding: 0;
+}
+
+#legend table {
+    width: 25%;
+    margin: 20px auto;
+    font-size: 10px;
+}
+/* End compétence */
+
+/* Dipôme */
+#diplome h4 {
+    margin: 0;
+}
+
+#diplome h4:first-child {
+    padding-top: 10px;
+}
+
+#diplome h6 {
+    margin-top: 10px;
+    margin-left: 85px;
+    font-size: 13px;
+}
+/* End diplôme */
+
+/* About */
+#about {
+    margin-top: 0;
+}
+
+#about p {
+    padding: 15px;
+    font-size: 15px;
+    font-style: italic;
+}
+/* End About */
+
+/* Contact */
+#contact {
+    margin-top: 0;
+}
+
+#contactLeft, #contactRight {
+    width: 45%;
+    padding: 20px 0px 20px 50px;
+}
+
+#contactLeft td, #contactRight td {
+    padding: 15px;
+}
+/* End contact */
+
+/* Responsive */
+@media screen and (max-width: 1150px) {
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    #experience ul li {
+        font-size: 12px;
+    }
+
+    #about p {
+        font-size: 13px;
+    }
+
+    #contactLeft {
+        width: 100%;
+        padding: 0px 0px 0px 50px;
+    }
+
+    #contactRight {
+        width: 100%;
+        padding: 0px 0px 20px 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .menu ul li a {
+        font-size: 13px;
+    }
+
+    #colGauche, #colDroite {
+        width: 45%;
+        margin-top: 20px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .menu ul li a {
+        font-size: 13px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    #colGauche, #colDroite {
+        width: 43%;
+        margin-top: 20px;
+        padding-left: 40px;
+    }
+
+    #contactLeft td, #contactRight td {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #about p {
+        font-size: 12px;
+    }
+
+    #legend table {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fa-4x {
+        font-size: 3em;
+    }
+
+    .exp h2, .comp h2, .formation h2, .about h2, .contact h2 {
+        margin-left: 20px;
+        margin-top: 7px;
+    }
+
+    #colGauche, #colDroite {
+        width: 40%;
+        margin-top: 20px;
+        padding-left: 30px;
+    }
+
+    #legend table {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #experience h4 {
+        font-size: 15px;
+    }
+
+    #diplome h6 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    #diplome h4 {
+        font-size: 15px;
+    }
+
+    #colGauche, #colDroite {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #legend table {
+        width: 50%;
+    }
+
+    .exp h2, .comp h2, .formation h2, .about h2, .contact h2 {
+        margin-left: 20px;
+        margin-top: 7px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu {
+        width: 75%;
+        margin: 0;
+    }
+
+    .exp h2, .comp h2, .formation h2, .about h2, .contact h2 {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    #competence td {
+        padding: 5px;
+    }
+
+    #legend td {
+        padding: 0;
+    }
+
+    #diplome h4 {
+        font-size: 12px;
+    }
+
+    #diplome h6, #about p {
+        font-size: 10px;
+    }
+
+    #contactLeft, #contactRight {
+        padding: 0px 0px 0px 25px;
+    }
+
+    #contactRight td a, #contactLeft td a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu {
+        margin: 10px 0;
+    }
+
+    .fa-4x {
+        font-size: 2em;
+    }
+
+    .exp h2, .comp h2, .formation h2, .about h2, .contact h2 {
+        margin: 0 10px;
+    }
+
+    #colGauche, #colDroite {
+
+        width: 50%;
+        margin-top: 15px;
+        padding: 0;
+
+    }
+
+    #experience h4 {
+        font-size: 12px;
+    }
+
+    #experience ul li {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #experience h4 {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    #experience h2, #about h2 {
+        margin: 4px 10px;
+    }
+
+    #competence h2 {
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    #contactRight td a, #contactLeft td a {
+        font-size: 11px;
+    }
+
+    #contactLeft td, #contactRight td {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .exp h2, .comp h2, .formation h2, .about h2, .contact h2 {
+        margin: 0 10px;
+        font-size: 17px;
+    }
+
+    #legend table {
+        width: 60%;
+    }
+
+    .formation h2 {
+        margin: 3px 10px;
+        font-size: 16px;
+    }
+
+    #competence h2 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    #colGauche .fa-lg, #colDroite .fa-lg {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu ul li a {
+        font-size: 12px;
+    }
+
+    #competence h2, .formation h2 {
+        margin: 0;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .exp h2, #competence h2, .formation h2, .about h2, .contact h2 {
+        font-size: 14px;
+    }
+
+    #legend table {
+        width: 70%;
+        line-height: 1px;
+    }
+
+    #contactRight td a, #contactLeft td a {
+        font-size: 10px;
+    }
+}
+/* End responsive */
+
+/* Print */
+@media print {
+    @page {
+        margin: 1cm;
+    }
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    p {
+        widows: 4;
+        orphans: 3;
+    }
+    a[href^="http"]:not([href*="monsiteweb.com"]):after {
+        content: " (" attr(href) ")";
+    }
+}
+/* End print */
